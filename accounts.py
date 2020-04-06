@@ -1,5 +1,6 @@
 import time
 
+# Base class definition
 class Account:
 
     def __init__(self, name, balance, account_number, username, password, phone_number, account_type, min_balance):
@@ -25,6 +26,7 @@ class Account:
         print(" You have ${} in your bank account.".format(self.balance))
 
 
+# Subclass definitions
 class Checking(Account):
 
     def __init__(self, name, balance, account_number, username, password, phone_number, account_type, min_balance):
